@@ -1,48 +1,151 @@
 <!DOCTYPE html>
-<html lamg = "ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Семестровая работа</title>
-    </head>
-    <body>
-        <div id="header">Хэдер</div>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="pages/news.html">Новости</a></li>
-                <li><a href="pages/practices.html">Практики</a></li> 
-                <li><a href="pages/goods.html">Товары</a></li>
-                <li><a href="pages/contacts.html">Контакты</a></li>
-            </ul>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семестровая работа</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Хэдер */
+        #header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Меню */
+        #menu {
+            background-color: #34495e;
+        }
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        #menu li {
+            margin: 0 15px;
+        }
+        #menu a {
+            color: white;
+            font-weight: bold;
+            display: block;
+            padding: 10px 0;
+        }
+        #menu a:hover {
+            color: #1abc9c;
+        }
+
+        /* Основной контент */
+        #content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        #content img {
+            width: 200px;
+            height: 250px;
+            display: block;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        #content h2 {
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+        #skills, #experience {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .skill, .exp-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1 1 200px;
+        }
+        .exp-item {
+            flex: 1 1 100%;
+        }
+
+        /* Футер */
+        #footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хэдер -->
+    <div id="header">Хэдер</div>
+
+    <!-- Меню навигации -->
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="pages/news.html">Новости</a></li>
+            <li><a href="pages/practices.html">Практики</a></li>
+            <li><a href="pages/goods.html">Товары</a></li>
+            <li><a href="pages/contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <!-- Основной блок информации -->
+    <div id="content">
+        <h2>Информация об авторе</h2>
+        <img src="images/photo.png" alt="Фото автора">
+        <p><strong>Иванов Иван Иванович</strong></p>
+        <p>ЭФБО-00-00</p>
+
+        <h2>Обо мне</h2>
+        <p>Я родился в Москве в 70-м на краю города. Глупость рано ударила в голову. В четыре активно ругался. Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в раздевалке.</p>
+
+        <h2>Навыки</h2>
+        <div id="skills">
+            <div class="skill">Навык 1</div>
+            <div class="skill">Навык 2</div>
+            <div class="skill">Навык 3</div>
+            <div class="skill">Навык 4</div>
         </div>
-        <div id="content">
-            <p>Информация об авторе</p>
-            <img src="images/photo.png" alt="Фото автора" width="200" height="250">
-            <p>Дарьин Александр Владимирович</p>
-            <p>ЭФБО-00-00</p>
-            <p>Обо мне: Я родился в Ульяновске в 2006 на краю города. Глупость рано ударила в голову. В четыре активно ругался.
-Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в раздевалке.</p>
-            <div>Навык 1</div>
-            <div>Навык 2</div>
-            <div>Навык 3</div>
-            <div>Навык 4</div>
-            <div>
-                Мой опыт работы:
-                <div>
-                    Опыт 1<br>
-                    Работал фантазёром. Сочинял и праздновал.
-                </div>
-                <div>
-                    Опыт 2<br>
-                    Работал воровством. Воровал и продавал.
-                </div>
-                <div>
-                    Опыт 3<br>
-                    Работал рэпером. Читал и пел.
-                </div>
+
+        <h2>Мой опыт</h2>
+        <div id="experience">
+            <div class="exp-item">
+                <strong>Опыт 1</strong><br>
+                Работал фантазёром. Сочинял и праздновал.
+            </div>
+            <div class="exp-item">
+                <strong>Опыт 2</strong><br>
+                Работал воровством. Воровал и продавал.
+            </div>
+            <div class="exp-item">
+                <strong>Опыт 3</strong><br>
+                Работал рэпером. Читал и пел.
             </div>
         </div>
-        <div id="footer">Футер</div>    
-    </body>
+    </div>
+
+    <!-- Футер -->
+    <div id="footer">Футер</div>
+
+</body>
 </html>
