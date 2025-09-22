@@ -5,97 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
     <style>
-        /* Простейшее оформление для наглядности */
+        /* Общие стили */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        header, nav, footer {
-            background-color: #333;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Хэдер и меню */
+        header {
+            background-color: #2c3e50;
             color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
             padding: 10px 20px;
+            display: flex;
+            justify-content: center;
         }
         nav a {
             color: white;
-            margin-right: 15px;
-            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Контейнер новостей */
         .news-container {
-            padding: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         .news-item {
-            border-bottom: 1px solid #ccc;
-            padding: 15px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .news-item:hover {
+            transform: translateY(-5px);
         }
         .news-title {
-            font-size: 1.5em;
-            margin-bottom: 5px;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #2c3e50;
         }
         .news-meta {
             font-size: 0.9em;
-            color: #555;
-            margin-bottom: 10px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
         }
         .news-text {
-            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Футер */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Хэдер -->
-    <header>
-        <h1>Мой Блог Новостей</h1>
-    </header>
+<header>
+    <h1>Блог Новостей</h1>
+</header>
 
-    <!-- Меню навигации -->
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="news.html">Новости</a>
-        <a href="about.html">О нас</a>
-        <a href="contact.html">Контакты</a>
-    </nav>
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="news.html">Новости</a>
+    <a href="goods.html">Каталог</a>
+    <a href="contacts.html">Контакты</a>
+</nav>
 
-    <!-- Основной блок информации -->
-    <div class="news-container">
-
-        <!-- Новость 1 -->
-        <div class="news-item">
-            <div class="news-title">Первая новость блога</div>
-            <div class="news-meta">Опубликовано: 22.09.2025 | Автор: Иван Иванов</div>
-            <div class="news-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nulla euismod, nisl vel tincidunt congue, justo sapien sagittis urna, vitae convallis sapien nulla sed orci.
-            </div>
+<div class="news-container">
+    <div class="news-item">
+        <div class="news-title">Первая новость блога</div>
+        <div class="news-meta">22.09.2025 | Автор: Иван Иванов</div>
+        <div class="news-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vel tincidunt congue, justo sapien sagittis urna, vitae convallis sapien nulla sed orci.
         </div>
-
-        <!-- Новость 2 -->
-        <div class="news-item">
-            <div class="news-title">Вторая новость блога</div>
-            <div class="news-meta">Опубликовано: 21.09.2025 | Автор: Мария Петрова</div>
-            <div class="news-text">
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-        </div>
-
-        <!-- Новость 3 -->
-        <div class="news-item">
-            <div class="news-title">Третья новость блога</div>
-            <div class="news-meta">Опубликовано: 20.09.2025 | Автор: Сергей Сидоров</div>
-            <div class="news-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-        </div>
-
     </div>
 
-    <!-- Футер -->
-    <footer>
-        &copy; 2025 Мой Блог Новостей. Все права защищены.
-    </footer>
+    <div class="news-item">
+        <div class="news-title">Вторая новость блога</div>
+        <div class="news-meta">21.09.2025 | Автор: Мария Петрова</div>
+        <div class="news-text">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </div>
+
+    <div class="news-item">
+        <div class="news-title">Третья новость блога</div>
+        <div class="news-meta">20.09.2025 | Автор: Сергей Сидоров</div>
+        <div class="news-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Блог Новостей. Все права защищены.
+</footer>
 
 </body>
 </html>
