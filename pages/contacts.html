@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        /* Базовое оформление */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .contact-container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-item {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хэдер -->
+    <header>
+        <h1>Наши Контакты</h1>
+    </header>
+
+    <!-- Меню навигации -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="goods.html">Каталог</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <!-- Основной блок информации -->
+    <div class="contact-container">
+
+        <div class="contact-item">
+            <strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a>
+        </div>
+
+        <div class="contact-item">
+            <strong>Адрес:</strong> г. Москва, ул. Примерная, д. 1
+        </div>
+
+        <div class="contact-item">
+            <a class="contact-button" href="tel:+79990001122">Позвоните мне</a>
+        </div>
+
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        &copy; 2025 Наши Контакты. Все права защищены.
+    </footer>
+
+</body>
+</html>

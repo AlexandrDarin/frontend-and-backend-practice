@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <style>
+        /* Базовое оформление */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .goods-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            justify-content: center;
+        }
+        .goods-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        }
+        .goods-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .goods-name {
+            font-size: 1.1em;
+            margin: 10px 0 5px;
+        }
+        .goods-price {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хэдер -->
+    <header>
+        <h1>Магазин товаров</h1>
+    </header>
+
+    <!-- Меню навигации -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="goods.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+
+    <!-- Основной блок информации -->
+    <div class="goods-container">
+
+        <!-- Карточка товара 1 -->
+        <div class="goods-item">
+            <img src="images/product1.jpg" alt="Товар 1">
+            <div class="goods-name">Товар 1</div>
+            <div class="goods-price">1500 ₽</div>
+        </div>
+
+        <!-- Карточка товара 2 -->
+        <div class="goods-item">
+            <img src="images/product2.jpg" alt="Товар 2">
+            <div class="goods-name">Товар 2</div>
+            <div class="goods-price">2300 ₽</div>
+        </div>
+
+        <!-- Карточка товара 3 -->
+        <div class="goods-item">
+            <img src="images/product3.jpg" alt="Товар 3">
+            <div class="goods-name">Товар 3</div>
+            <div class="goods-price">1800 ₽</div>
+        </div>
+
+        <!-- Карточка товара 4 -->
+        <div class="goods-item">
+            <img src="images/product4.jpg" alt="Товар 4">
+            <div class="goods-name">Товар 4</div>
+            <div class="goods-price">2000 ₽</div>
+        </div>
+
+        <!-- Карточка товара 5 -->
+        <div class="goods-item">
+            <img src="images/product5.jpg" alt="Товар 5">
+            <div class="goods-name">Товар 5</div>
+            <div class="goods-price">1200 ₽</div>
+        </div>
+
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        &copy; 2025 Магазин товаров. Все права защищены.
+    </footer>
+
+</body>
+</html>
