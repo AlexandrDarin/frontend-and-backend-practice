@@ -3,70 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог товаров</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333; }
-        a { text-decoration:none; color:inherit; }
-
-        header { background:#2c3e50; color:white; text-align:center; padding:20px; }
-        nav { background:#34495e; display:flex; justify-content:center; padding:10px 0; }
-        nav a { color:white; margin:0 15px; font-weight:bold; }
-        nav a:hover { color:#1abc9c; }
-
-        .container { max-width:1200px; margin:30px auto; padding:0 20px; }
-        .goods-container { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:20px; }
-        .goods-item { background:white; border-radius:10px; padding:15px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:0.2s; }
-        .goods-item:hover { transform:translateY(-5px); }
-        .goods-item img { width:100%; border-radius:10px; margin-bottom:10px; }
-        .goods-name { font-size:1.2em; margin-bottom:5px; color:#2c3e50; }
-        .goods-price { font-size:1em; color:#e74c3c; font-weight:bold; }
-
-        footer { background:#2c3e50; color:white; text-align:center; padding:15px; margin-top:40px; }
-    </style>
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-
-<header>
-    <h1>Каталог товаров</h1>
-</header>
-
-<nav>
-    <a href="news.html">Новости</a>
-    <a href="goods.html">Каталог</a>
-    <a href="contacts.html">Контакты</a>
-</nav>
-
-<div class="container goods-container">
-    <div class="goods-item">
-        <img src="images/product1.jpg" alt="Товар 1">
-        <div class="goods-name">Товар 1</div>
-        <div class="goods-price">1500 ₽</div>
+    <div class="page-container">
+        <div class="header">
+            <h1>Каталог товаров</h1>
+        </div>
+        
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2 class="section-title">Наши товары</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="../images/Товар 4.jpg" alt="Товар 4" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Загонит в депрессию</h3>
+                        <p class="product-price">1 руб.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="../images/Товар 3.jpg" alt="Товар 3" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Поможет выйти из депрессии</h3>
+                        <p class="product-price">125 000 руб.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="../images/Товар 2.jpg" alt="Товар 2" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Обезьяна необычная</h3>
+                        <p class="product-price">232 000 руб.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="../images/Товар 1.jpg" alt="Товар 1" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Обезьяна обычная</h3>
+                        <p class="product-price">176 500 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Семестровая работа. Все права защищены.</p>
+        </div>
     </div>
-    <div class="goods-item">
-        <img src="images/product2.jpg" alt="Товар 2">
-        <div class="goods-name">Товар 2</div>
-        <div class="goods-price">2300 ₽</div>
-    </div>
-    <div class="goods-item">
-        <img src="images/product3.jpg" alt="Товар 3">
-        <div class="goods-name">Товар 3</div>
-        <div class="goods-price">1800 ₽</div>
-    </div>
-    <div class="goods-item">
-        <img src="images/product4.jpg" alt="Товар 4">
-        <div class="goods-name">Товар 4</div>
-        <div class="goods-price">2000 ₽</div>
-    </div>
-    <div class="goods-item">
-        <img src="images/product5.jpg" alt="Товар 5">
-        <div class="goods-name">Товар 5</div>
-        <div class="goods-price">1200 ₽</div>
-    </div>
-</div>
-
-<footer>
-    &copy; 2025 Магазин товаров. Все права защищены.
-</footer>
-
 </body>
 </html>

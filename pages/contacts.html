@@ -4,51 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333; }
-        a { text-decoration:none; color:inherit; }
-
-        header { background:#2c3e50; color:white; text-align:center; padding:20px; }
-        nav { background:#34495e; display:flex; justify-content:center; padding:10px 0; }
-        nav a { color:white; margin:0 15px; font-weight:bold; }
-        nav a:hover { color:#1abc9c; }
-
-        .container { max-width:600px; margin:40px auto; padding:0 20px; }
-        .contact-container { background:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center; }
-        .contact-item { font-size:1.2em; margin-bottom:20px; }
-        .contact-button { display:inline-block; padding:12px 25px; font-size:1em; color:white; background-color:#1abc9c; border:none; border-radius:5px; cursor:pointer; transition:0.3s; }
-        .contact-button:hover { background-color:#16a085; }
-
-        footer { background:#2c3e50; color:white; text-align:center; padding:15px; margin-top:40px; }
-    </style>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-
-<header>
-    <h1>Контакты</h1>
-</header>
-
-<nav>
-    <a href="news.html">Новости</a>
-    <a href="goods.html">Каталог</a>
-    <a href="contacts.html">Контакты</a>
-</nav>
-
-<div class="container contact-container">
-    <div class="contact-item">
-        <strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a>
+    <div class="page-container">
+        <div class="header">
+            <h1>Контакты</h1>
+        </div>
+        
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            
+            <div class="contacts-container">
+                <div class="contact-item">
+                    <h3 class="contact-title">Электронная почта</h3>
+                    <p class="contact-info">darins06@mail.ru</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3 class="contact-title">Адрес</h3>
+                    <p class="contact-info">г. Москва, ул. Примерная, д. 123, офис 456</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3 class="contact-title">Телефон</h3>
+                    <p class="contact-info">+7 (999) 123-45-623</p>
+                    <button class="contact-button" onclick="alert('Позвоните нам по номеру: +7 (999) 123-45-67')">
+                        Позвоните мне
+                    </button>
+                </div>
+                
+                <div class="contact-item">
+                    <h3 class="contact-title">Время работы</h3>
+                    <p class="contact-info">Пн-Сб: 9:00-18:00<br>Вс: выходной</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Семестровая работа. Все права защищены.</p>
+        </div>
     </div>
-    <div class="contact-item">
-        <strong>Адрес:</strong> г. Москва, ул. Примерная, д. 1
-    </div>
-    <div class="contact-item">
-        <a class="contact-button" href="tel:+79990001122">Позвоните мне</a>
-    </div>
-</div>
-
-<footer>
-    &copy; 2025 Наши Контакты. Все права защищены.
-</footer>
-
+</body>
+</html>
 </body>
 </html>
