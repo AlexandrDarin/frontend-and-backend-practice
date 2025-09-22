@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>Новости</title>
     <style>
+        /* Общие стили */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Хэдер и меню */
         header {
             background-color: #2c3e50;
             color: white;
-            text-align: center;
             padding: 20px;
+            text-align: center;
         }
         nav {
             background-color: #34495e;
+            padding: 10px 20px;
             display: flex;
             justify-content: center;
-            padding: 10px 0;
         }
         nav a {
             color: white;
@@ -32,34 +40,39 @@
             color: #1abc9c;
         }
 
-        .contact-container {
-            max-width: 600px;
+        /* Контейнер новостей */
+        .news-container {
+            max-width: 1000px;
             margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .news-item {
             background-color: white;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
+            transition: transform 0.2s;
         }
-        .contact-item {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+        .news-item:hover {
+            transform: translateY(-5px);
         }
-        .contact-button {
-            display: inline-block;
-            padding: 10px 25px;
-            font-size: 1em;
-            color: white;
-            background-color: #1abc9c;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
+        .news-title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #2c3e50;
         }
-        .contact-button:hover {
-            background-color: #16a085;
+        .news-meta {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .news-text {
+            line-height: 1.6;
         }
 
+        /* Футер */
         footer {
             background-color: #2c3e50;
             color: white;
@@ -72,4 +85,45 @@
 <body>
 
 <header>
-    <h1>Контакты</h
+    <h1>Блог Новостей</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="news.html">Новости</a>
+    <a href="goods.html">Каталог</a>
+    <a href="contacts.html">Контакты</a>
+</nav>
+
+<div class="news-container">
+    <div class="news-item">
+        <div class="news-title">Первая новость блога</div>
+        <div class="news-meta">22.09.2025 | Автор: Иван Иванов</div>
+        <div class="news-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vel tincidunt congue, justo sapien sagittis urna, vitae convallis sapien nulla sed orci.
+        </div>
+    </div>
+
+    <div class="news-item">
+        <div class="news-title">Вторая новость блога</div>
+        <div class="news-meta">21.09.2025 | Автор: Мария Петрова</div>
+        <div class="news-text">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </div>
+
+    <div class="news-item">
+        <div class="news-title">Третья новость блога</div>
+        <div class="news-meta">20.09.2025 | Автор: Сергей Сидоров</div>
+        <div class="news-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Блог Новостей. Все права защищены.
+</footer>
+
+</body>
+</html>
