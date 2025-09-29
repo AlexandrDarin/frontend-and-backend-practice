@@ -7,13 +7,12 @@
         <link rel="stylesheet" href="style/styles.css">
     </head>
     <body>
-        <!-- Изменение: Заменили div на семантические теги -->
         <div class="page-container">
-            <header class="header"> <!-- Было: <div class="header"> -->
-                <h1>Хэдер</h1> <!-- Добавили заголовок для семантики -->
+            <header class="header">
+                <h1>Персональное портфолио</h1>
             </header>
 
-            <nav class="nav"> <!-- Было: <div class="nav"> -->
+            <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
@@ -23,51 +22,53 @@
                 </ul>
             </nav>
 
-            <main class="content"> <!-- Было: <div class="content"> -->
-                <article class="profile-header"> <!-- Было: <div class="profile-header"> -->
+            <main class="content">
+                <article class="profile-header">
                     <h1 class="profile-title">Информация об авторе</h1>
                     <img class="profile-photo" src="images/photo.jpg" alt="Фото автора">
                     <h2 class="profile-name">Иванов Иван Иванович</h2>
                     <p class="profile-group">ЭФБО-15-24</p>
                 </article>
                 
-                <section class="about-me"> <!-- Было: <div class="about-me"> -->
-                    <h2>Обо мне</h2> <!-- Добавили заголовок для семантики -->
+                <section class="about-me">
+                    <h2>Обо мне</h2>
                     <p>Обо мне: Я родился в Москве в 70-м на краю города. Глупость рано ударила в голову. В четыре активно ругался.
                     Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в раздевалке.</p>
                 </section>
                 
-                <section class="skills-container"> <!-- Было: <div class="skills-container"> -->
-                    <h2>Мои навыки</h2> <!-- Добавили заголовок для семантики -->
-                    <div class="skills-grid"> <!-- Обертка для Grid -->
-                        <div class="skill-tag">Навык 1</div>
-                        <div class="skill-tag">Навык 2</div>
-                        <div class="skill-tag">Навык 3</div>
-                        <div class="skill-tag">Навык 4</div>
+                <section class="skills-section">
+                    <h2 class="section-title">Мои навыки</h2>
+                    <div class="skills-grid">
+                        <div class="skill-tag">HTML5</div>
+                        <div class="skill-tag">CSS3</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">React</div>
+                        <div class="skill-tag">Node.js</div>
+                        <div class="skill-tag">Git</div>
                     </div>
                 </section>
                 
-                <section class="experience-section"> <!-- Было: <div class="experience-section"> -->
+                <section class="experience-section">
                     <h2 class="section-title">Мой опыт работы</h2>
-                    <div class="experience-grid"> <!-- Обертка для Grid -->
-                        <article class="experience-card"> <!-- Было: <div class="experience-card"> -->
-                            <h3 class="experience-title">Опыт 1</h3>
-                            <p class="experience-desc">Работал фантазёром. Сочинял и праздновал.</p>
+                    <div class="experience-grid">
+                        <article class="experience-card">
+                            <h3 class="experience-title">Frontend разработчик</h3>
+                            <p class="experience-desc">Разработка пользовательских интерфейсов с использованием современных технологий.</p>
                         </article>
                         <article class="experience-card">
-                            <h3 class="experience-title">Опыт 2</h3>
-                            <p class="experience-desc">Работал воровством. Воровал и продавал.</p>
+                            <h3 class="experience-title">Веб-дизайнер</h3>
+                            <p class="experience-desc">Создание дизайн-макетов и прототипов для веб-приложений.</p>
                         </article>
                         <article class="experience-card">
-                            <h3 class="experience-title">Опыт 3</h3>
-                            <p class="experience-desc">Работал рэпером. Читал и пел.</p>
+                            <h3 class="experience-title">Fullstack разработчик</h3>
+                            <p class="experience-desc">Полный цикл разработки от backend до frontend.</p>
                         </article>
                     </div>
                 </section>
             </main>
 
-            <footer class="footer"> <!-- Было: <div class="footer"> -->
-                <p>Футер</p> <!-- Добавили параграф для семантики -->
+            <footer class="footer">
+                <p>&copy; 2024 Персональное портфолио. Все права защищены.</p>
             </footer>    
         </div>
     </body>
